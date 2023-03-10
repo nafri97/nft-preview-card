@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Outfit:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | NFT preview card component</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="imageContainer">
+        <img class="Equilibrium" src="images/image-equilibrium.jpg"
+          alt="https://img.icons8.com/ios/50/000000/under-construction.png" />
+        <div class="overlay">
+          <img src="images/icon-view.svg" alt="Icon" />
+        </div>
+      </div>
+      <a href="#" id='fake'>Equilibrium #3429</a>
+      <p>Our Equilibrium collection promotes balance and calm.</p>
+      <div class="spaceBetween">
+        <div class='justify'>
+          <img class="iconEth" src="images/icon-ethereum.svg"
+            alt="https://img.icons8.com/ios/50/000000/under-construction.png" />
+          <label class="ETH">0.041 ETH</label>
+        </div>
+        <div class='justify'>
+          <img class="icon" src="images/icon-clock.svg"
+            alt="https://img.icons8.com/ios/50/000000/under-construction.png" />
+          <label>3 days left</label>
+          <div></div>
+        </div>
+      </div>
+      <hr class="position-absolute start-50 translate-middle-x"/>
+      <div class="justify">
+        <img class="avatar" src="images/image-avatar.png"
+          alt="https://img.icons8.com/ios/50/000000/under-construction.png" />
+        <label style="margin-bottom:18px">Creation of <a href="#" onclick="alerttt()" style="font-weight:400;font-size: inherit;margin: 0">Jules Wyvern</a></label>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="htps://linkedin/in/nafri97">Irfan Rizki Saputra</a>.
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+crossorigin="anonymous">
+</script>
+<script>
+document.getElementById("fake").addEventListener("click", function(event) {
+event.preventDefault(); // prevent the default link behavior
+alert("nothing happen, it just demo :)");
+}); 
+function alerttt(){
+event.preventDefault();
+alert("nothing happen, it just demo :)");
+};
+</script>
+</html>
